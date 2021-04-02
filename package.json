@@ -1,5 +1,5 @@
 {
-  "name": "pp-tomas-bolio-back",
+  "name": "pp-tomas-bolio-backend",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -8,11 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TomasPB9/pp-tomas-bolio-back.git"
+    "url": "git+https://github.com/TomasPB9/pp-tomas-bolio-backend.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TomasPB9/pp-tomas-bolio-backend/issues"
+  },
+  "homepage": "https://github.com/TomasPB9/pp-tomas-bolio-backend#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "ejs": "^3.1.6",
