@@ -1,0 +1,31 @@
+<%- include ('partials/_header'); -%>
+
+<form id="login" method="POST">
+  <input type="email" name="email" value="" placeholder="email ...">
+  <br><br>
+  <input type="password" name="password" value="" placeholder=" Your password">
+  <br><br>
+  <input type="submit" value="login">
+</form>
+<a href="/">
+  <button class="btn btn-info mt-4">Regresar a Pantalla Princial</button>
+</a>
+
+<script type="text/javascript">
+  const formLogin=document.querySelector('#login');
+  const formData=new FormData(formLogin);
+
+  formLogin.addEventListener('submit',event=>{
+    event.preventDefault()
+    fetch('/signIn',{
+      method:'POST',
+      body:formData
+    })
+    .then(res=>res.json())
+    .then(data=>{
+      localStorage.setItem('token', data.token)
+    })
+  })
+</script>
+
+<%- include ('partials/_footer'); -%>
